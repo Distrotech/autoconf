@@ -1,9 +1,9 @@
 This is autoconf.info, produced by makeinfo version 4.13 from
 autoconf.texi.
 
-This manual (10 June 2013) is for GNU Autoconf (version
-2.69.2-2851b7-dirty), a package for creating scripts to configure
-source code packages using templates and an M4 macro package.
+This manual (30 January 2014) is for GNU Autoconf (version 2.69), a
+package for creating scripts to configure source code packages using
+templates and an M4 macro package.
 
    Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc.
 
@@ -45,9 +45,9 @@ File: autoconf.info,  Node: Top,  Next: Introduction,  Up: (dir)
 Autoconf
 ********
 
-This manual (10 June 2013) is for GNU Autoconf (version
-2.69.2-2851b7-dirty), a package for creating scripts to configure
-source code packages using templates and an M4 macro package.
+This manual (30 January 2014) is for GNU Autoconf (version 2.69), a
+package for creating scripts to configure source code packages using
+templates and an M4 macro package.
 
    Copyright (C) 1992-1996, 1998-2012 Free Software Foundation, Inc.
 
@@ -1604,7 +1604,7 @@ version of Autoconf that can successfully compile a given
      earlier than VERSION, print an error message to the standard error
      output and exit with failure (exit status is 63).  For example:
 
-          AC_PREREQ([2.69.2-2851b7-dirty])
+          AC_PREREQ([2.69])
 
      This macro may be used before `AC_INIT'.
 
@@ -1613,11 +1613,11 @@ version of Autoconf that can successfully compile a given
      version of Autoconf that is currently parsing the input file, in a
      format suitable for `m4_version_compare' (*note
      m4_version_compare::); in other words, for this release of
-     Autoconf, its value is `2.69.2-2851b7-dirty'.  One potential use
-     of this macro is for writing conditional fallbacks based on when a
-     feature was added to Autoconf, rather than using `AC_PREREQ' to
-     require the newer version of Autoconf.  However, remember that the
-     Autoconf philosophy favors feature checks over version checks.
+     Autoconf, its value is `2.69'.  One potential use of this macro is
+     for writing conditional fallbacks based on when a feature was
+     added to Autoconf, rather than using `AC_PREREQ' to require the
+     newer version of Autoconf.  However, remember that the Autoconf
+     philosophy favors feature checks over version checks.
 
      You should not expand this macro directly; use
      `m4_defn([AC_AUTOCONF_VERSION])' instead.  This is because some
@@ -25313,378 +25313,378 @@ introduced in this document.
 
 
 Tag Table:
-Node: Top1968
-Node: Introduction21399
-Node: The GNU Build System27963
-Node: Automake28942
-Node: Gnulib30891
-Node: Libtool32200
-Node: Pointers33622
-Ref: Pointers-Footnote-134923
-Node: Making configure Scripts35083
-Node: Writing Autoconf Input38432
-Node: Shell Script Compiler39895
-Node: Autoconf Language42256
-Node: Autoconf Input Layout49425
-Node: autoscan Invocation50833
-Node: ifnames Invocation53389
-Node: autoconf Invocation54589
-Node: autoreconf Invocation59874
-Node: Setup64635
-Node: Initializing configure65957
-Ref: AC_INIT66462
-Node: Versioning69346
-Node: Notices71237
-Node: Input72412
-Ref: AC_CONFIG_SRCDIR72553
-Node: Output75500
-Ref: AC_OUTPUT75935
-Ref: AC_PROG_MAKE_SET77553
-Node: Configuration Actions77978
-Node: Configuration Files83266
-Ref: AC_CONFIG_FILES83527
-Node: Makefile Substitutions84746
-Node: Preset Output Variables86489
-Node: Installation Directory Variables96003
-Node: Changed Directory Variables103851
-Node: Build Directories106445
-Node: Automatic Remaking108300
-Node: Configuration Headers110468
-Node: Header Templates113770
-Node: autoheader Invocation116505
-Node: Autoheader Macros120147
-Node: Configuration Commands122412
-Ref: AC_CONFIG_COMMANDS122924
-Node: Configuration Links124209
-Ref: AC_CONFIG_LINKS124660
-Node: Subdirectories125633
-Node: Default Prefix128113
-Ref: AC_PREFIX_PROGRAM129004
-Node: Existing Tests129535
-Node: Common Behavior131337
-Node: Standard Symbols131976
-Node: Default Includes132557
-Node: Alternative Programs134811
-Node: Particular Programs135497
-Ref: AC_PROG_LEX141245
-Ref: AC_PROG_LN_S143856
-Node: Generic Programs145474
-Ref: AC_CHECK_PROG146446
-Ref: AC_CHECK_PROGS147172
-Ref: AC_PATH_PROG151172
-Ref: AC_PATH_PROGS151546
-Node: Files154625
-Node: Libraries155825
-Ref: AC_CHECK_LIB156066
-Ref: AC_SEARCH_LIBS158325
-Node: Library Functions159509
-Node: Function Portability160132
-Node: Particular Functions169644
-Ref: AC_FUNC_ALLOCA169975
-Ref: AC_FUNC_CLOSEDIR_VOID172364
-Ref: AC_FUNC_FORK174354
-Ref: AC_FUNC_GETLOADAVG176396
-Ref: AC_FUNC_GETMNTENT177961
-Ref: AC_FUNC_MMAP182203
-Ref: AC_FUNC_STRCOLL185058
-Ref: AC_FUNC_STRFTIME186033
-Ref: AC_FUNC_UTIME_NULL187315
-Ref: AC_FUNC_VPRINTF187663
-Node: Generic Functions188879
-Ref: AC_CHECK_FUNC189405
-Ref: AC_CHECK_FUNCS190034
-Node: Header Files194660
-Node: Header Portability195293
-Node: Particular Headers198388
-Ref: AC_HEADER_DIRENT199427
-Ref: AC_HEADER_MAJOR200957
-Ref: AC_HEADER_STAT201741
-Ref: AC_HEADER_STDC203247
-Ref: AC_HEADER_TIME207986
-Node: Generic Headers209373
-Ref: AC_CHECK_HEADER209773
-Ref: AC_CHECK_HEADERS211646
-Node: Declarations214211
-Node: Particular Declarations214807
-Node: Generic Declarations215031
-Ref: AC_CHECK_DECLS216416
-Node: Structures218942
-Node: Particular Structures219557
-Ref: AC_STRUCT_ST_BLOCKS220626
-Ref: AC_STRUCT_TIMEZONE221322
-Node: Generic Structures221651
-Ref: AC_CHECK_MEMBERS222642
-Node: Types223475
-Node: Particular Types223995
-Ref: AC_TYPE_GETGROUPS224438
-Ref: AC_TYPE_MODE_T227474
-Ref: AC_TYPE_OFF_T227657
-Ref: AC_TYPE_PID_T227837
-Ref: AC_TYPE_SIZE_T228017
-Ref: AC_TYPE_UID_T228386
-Node: Generic Types230031
-Node: Compilers and Preprocessors232186
-Node: Specific Compiler Characteristics233460
-Node: Generic Compiler Characteristics234565
-Ref: AC_CHECK_SIZEOF234805
-Node: C Compiler239595
-Ref: AC_PROG_CC_C_O244046
-Ref: AC_C_BIGENDIAN247854
-Ref: AC_C_CONST249695
-Ref: AC_C_INLINE253013
-Ref: AC_C_CHAR_UNSIGNED253236
-Ref: AC_PROG_GCC_TRADITIONAL255858
-Node: C++ Compiler256270
-Node: Objective C Compiler258667
-Node: Objective C++ Compiler260041
-Node: Erlang Compiler and Interpreter261491
-Node: Fortran Compiler263536
-Node: Go Compiler288936
-Node: System Services289981
-Ref: AC_PATH_X290226
-Ref: AC_PATH_XTRA291219
-Ref: AC_SYS_INTERPRETER291796
-Ref: AC_SYS_LONG_FILE_NAMES293208
-Node: Posix Variants293585
-Ref: AC_USE_SYSTEM_EXTENSIONS293885
-Node: Erlang Libraries294961
-Node: Writing Tests299899
-Node: Language Choice301923
-Ref: AC_LANG302420
-Ref: AC_LANG_PUSH304219
-Ref: Language Choice-Footnote-1306092
-Node: Writing Test Programs306248
-Node: Guidelines306826
-Node: Test Functions309086
-Node: Generating Sources310484
-Node: Running the Preprocessor316568
-Ref: AC_PREPROC_IFELSE317300
-Ref: AC_EGREP_HEADER319230
-Ref: AC_EGREP_CPP319559
-Node: Running the Compiler319984
-Node: Running the Linker321739
-Ref: AC_LINK_IFELSE322879
-Node: Runtime323755
-Ref: AC_RUN_IFELSE324530
-Node: Systemology329380
-Node: Multiple Cases331729
-Node: Results333430
-Node: Defining Symbols334249
-Node: Setting Output Variables339140
-Node: Special Chars in Variables345031
-Node: Caching Results346291
-Node: Cache Variable Names350009
-Node: Cache Files351660
-Node: Cache Checkpointing353985
-Node: Printing Messages355359
-Ref: AC_MSG_RESULT356873
-Ref: AC_MSG_NOTICE357380
-Ref: AC_MSG_ERROR357744
-Ref: AC_MSG_WARN358577
-Node: Programming in M4359000
-Node: M4 Quotation359805
-Node: Active Characters360774
-Ref: Active Characters-Footnote-1362164
-Ref: Active Characters-Footnote-2362278
-Node: One Macro Call362300
-Node: Quoting and Parameters363856
-Node: Quotation and Nested Macros366192
-Node: Changequote is Evil369202
-Node: Quadrigraphs371732
-Node: Balancing Parentheses374414
-Node: Quotation Rule Of Thumb378508
-Node: Using autom4te381406
-Ref: Using autom4te-Footnote-1382057
-Node: autom4te Invocation382106
-Node: Customizing autom4te390608
-Node: Programming in M4sugar391889
-Node: Redefined M4 Macros393070
-Node: Diagnostic Macros401400
-Ref: m4_fatal402153
-Ref: m4_warn402392
-Node: Diversion support403160
-Node: Conditional constructs410946
-Node: Looping constructs417800
-Ref: m4_foreach_w421412
-Node: Evaluation Macros428764
-Node: Text processing Macros437453
-Node: Number processing Macros447163
-Ref: m4_version_compare449115
-Node: Set manipulation Macros451422
-Node: Forbidden Patterns460538
-Node: Debugging via autom4te462029
-Node: Programming in M4sh463848
-Node: Common Shell Constructs465221
-Node: Polymorphic Variables473194
-Node: Initialization Macros482783
-Node: File Descriptor Macros488372
-Ref: AS_MESSAGE_LOG_FD489524
-Node: Writing Autoconf Macros491026
-Node: Macro Definitions491831
-Node: Macro Names495510
-Node: Reporting Messages499271
-Node: Dependencies Between Macros501115
-Node: Prerequisite Macros501810
-Node: Suggested Ordering507885
-Node: One-Shot Macros509428
-Node: Obsoleting Macros510781
-Ref: AU_DEFUN511535
-Node: Coding Style512564
-Node: Portable Shell520371
-Node: Shellology524679
-Node: Invoking the Shell528850
-Node: Here-Documents530032
-Node: File Descriptors533652
-Node: Signal Handling540090
-Node: File System Conventions545298
-Node: Shell Pattern Matching551110
-Node: Shell Substitutions551674
-Node: Assignments569550
-Node: Parentheses571441
-Node: Slashes572398
-Node: Special Shell Variables573252
-Node: Shell Functions586584
-Node: Limitations of Builtins589991
-Ref: case594013
-Ref: echo599171
-Ref: export606145
-Ref: if609565
-Ref: set613376
-Ref: trap625098
-Ref: unset628909
-Node: Limitations of Usual Tools630004
-Ref: awk630303
-Ref: grep648407
-Ref: mkdir654039
-Ref: sed659859
-Ref: touch670990
-Node: Portable Make674265
-Node: $< in Ordinary Make Rules675927
-Node: Failure in Make Rules676393
-Node: Special Chars in Names677421
-Node: Backslash-Newline-Empty678393
-Node: Backslash-Newline Comments679425
-Node: Long Lines in Makefiles680314
-Node: Macros and Submakes680690
-Node: The Make Macro MAKEFLAGS683377
-Node: The Make Macro SHELL684262
-Node: Parallel Make686761
-Node: Comments in Make Rules690445
-Node: Newlines in Make Rules691615
-Node: Comments in Make Macros692660
-Node: Trailing whitespace in Make Macros693870
-Node: Command-line Macros and whitespace694621
-Node: obj/ and Make695291
-Node: make -k Status695942
-Node: VPATH and Make696564
-Node: Variables listed in VPATH697888
-Node: VPATH and Double-colon698427
-Node: $< in Explicit Rules698833
-Node: Automatic Rule Rewriting699300
-Node: Tru64 Directory Magic705982
-Node: Make Target Lookup706808
-Node: Single Suffix Rules711250
-Node: Timestamps and Make712596
-Node: Portable C and C++714281
-Node: Varieties of Unportability715922
-Node: Integer Overflow718019
-Node: Integer Overflow Basics719032
-Node: Signed Overflow Examples720780
-Node: Optimization and Wraparound724282
-Node: Signed Overflow Advice727244
-Node: Signed Integer Division729918
-Node: Preprocessor Arithmetic730529
-Node: Null Pointers731278
-Node: Buffer Overruns731912
-Node: Volatile Objects734701
-Node: Floating Point Portability740379
-Node: Exiting Portably740886
-Node: Manual Configuration742362
-Node: Specifying Target Triplets743195
-Ref: Specifying Names743368
-Node: Canonicalizing746243
-Node: Using System Type748506
-Node: Site Configuration751310
-Node: Help Formatting752282
-Node: External Software753226
-Ref: AC_ARG_WITH754772
-Node: Package Options759097
-Ref: AC_ARG_ENABLE760552
-Node: Pretty Help Strings761713
-Ref: AS_HELP_STRING762299
-Node: Option Checking764640
-Node: Site Details766368
-Node: Transforming Names767597
-Node: Transformation Options768679
-Node: Transformation Examples769156
-Node: Transformation Rules770877
-Node: Site Defaults772423
-Node: Running configure Scripts777764
-Node: Basic Installation778829
-Node: Compilers and Options782926
-Node: Multiple Architectures783580
-Node: Installation Names785160
-Node: Optional Features788055
-Node: Particular Systems789409
-Node: System Type790833
-Node: Sharing Defaults792161
-Node: Defining Variables792799
-Node: configure Invocation793697
-Node: config.status Invocation795403
-Ref: CONFIG_SHELL799150
-Node: Obsolete Constructs800316
-Node: Obsolete config.status Use801279
-Node: acconfig Header803057
-Node: autoupdate Invocation805079
-Node: Obsolete Macros806945
-Ref: AC_FUNC_SETVBUF_REVERSED814587
-Ref: AC_TYPE_SIGNAL831133
-Node: Autoconf 1834111
-Node: Changed File Names835177
-Node: Changed Makefiles835927
-Node: Changed Macros837015
-Node: Changed Results838269
-Node: Changed Macro Writing840393
-Node: Autoconf 2.13841673
-Node: Changed Quotation842881
-Node: New Macros844799
-Node: Hosts and Cross-Compilation846594
-Node: AC_LIBOBJ vs LIBOBJS850749
-Node: AC_ACT_IFELSE vs AC_TRY_ACT852364
-Ref: AC_FOO_IFELSE vs AC_TRY_FOO852553
-Node: Using Autotest854366
-Node: Using an Autotest Test Suite856770
-Node: testsuite Scripts857061
-Node: Autotest Logs861543
-Node: Writing Testsuites863884
-Node: testsuite Invocation880916
-Node: Making testsuite Scripts886263
-Node: FAQ891401
-Node: Distributing892261
-Node: Why GNU M4893310
-Node: Bootstrapping894179
-Node: Why Not Imake894789
-Node: Defining Directories899540
-Node: Autom4te Cache901698
-Node: Present But Cannot Be Compiled903536
-Node: Expanded Before Required907253
-Node: Debugging912151
-Node: History917174
-Node: Genesis918043
-Node: Exodus919221
-Node: Leviticus922266
-Node: Numbers923794
-Node: Deuteronomy925709
-Node: GNU Free Documentation License928380
-Node: Indices953545
-Node: Environment Variable Index954264
-Node: Output Variable Index965604
-Node: Preprocessor Symbol Index982484
-Node: Cache Variable Index1000753
-Node: Autoconf Macro Index1011441
-Node: M4 Macro Index1045770
-Node: Autotest Macro Index1066520
-Node: Program & Function Index1068923
-Node: Concept Index1089637
+Node: Top1956
+Node: Introduction21375
+Node: The GNU Build System27939
+Node: Automake28918
+Node: Gnulib30867
+Node: Libtool32176
+Node: Pointers33598
+Ref: Pointers-Footnote-134899
+Node: Making configure Scripts35059
+Node: Writing Autoconf Input38408
+Node: Shell Script Compiler39871
+Node: Autoconf Language42232
+Node: Autoconf Input Layout49401
+Node: autoscan Invocation50809
+Node: ifnames Invocation53365
+Node: autoconf Invocation54565
+Node: autoreconf Invocation59850
+Node: Setup64611
+Node: Initializing configure65933
+Ref: AC_INIT66438
+Node: Versioning69322
+Node: Notices71183
+Node: Input72358
+Ref: AC_CONFIG_SRCDIR72499
+Node: Output75446
+Ref: AC_OUTPUT75881
+Ref: AC_PROG_MAKE_SET77499
+Node: Configuration Actions77924
+Node: Configuration Files83212
+Ref: AC_CONFIG_FILES83473
+Node: Makefile Substitutions84692
+Node: Preset Output Variables86435
+Node: Installation Directory Variables95949
+Node: Changed Directory Variables103797
+Node: Build Directories106391
+Node: Automatic Remaking108246
+Node: Configuration Headers110414
+Node: Header Templates113716
+Node: autoheader Invocation116451
+Node: Autoheader Macros120093
+Node: Configuration Commands122358
+Ref: AC_CONFIG_COMMANDS122870
+Node: Configuration Links124155
+Ref: AC_CONFIG_LINKS124606
+Node: Subdirectories125579
+Node: Default Prefix128059
+Ref: AC_PREFIX_PROGRAM128950
+Node: Existing Tests129481
+Node: Common Behavior131283
+Node: Standard Symbols131922
+Node: Default Includes132503
+Node: Alternative Programs134757
+Node: Particular Programs135443
+Ref: AC_PROG_LEX141191
+Ref: AC_PROG_LN_S143802
+Node: Generic Programs145420
+Ref: AC_CHECK_PROG146392
+Ref: AC_CHECK_PROGS147118
+Ref: AC_PATH_PROG151118
+Ref: AC_PATH_PROGS151492
+Node: Files154571
+Node: Libraries155771
+Ref: AC_CHECK_LIB156012
+Ref: AC_SEARCH_LIBS158271
+Node: Library Functions159455
+Node: Function Portability160078
+Node: Particular Functions169590
+Ref: AC_FUNC_ALLOCA169921
+Ref: AC_FUNC_CLOSEDIR_VOID172310
+Ref: AC_FUNC_FORK174300
+Ref: AC_FUNC_GETLOADAVG176342
+Ref: AC_FUNC_GETMNTENT177907
+Ref: AC_FUNC_MMAP182149
+Ref: AC_FUNC_STRCOLL185004
+Ref: AC_FUNC_STRFTIME185979
+Ref: AC_FUNC_UTIME_NULL187261
+Ref: AC_FUNC_VPRINTF187609
+Node: Generic Functions188825
+Ref: AC_CHECK_FUNC189351
+Ref: AC_CHECK_FUNCS189980
+Node: Header Files194606
+Node: Header Portability195239
+Node: Particular Headers198334
+Ref: AC_HEADER_DIRENT199373
+Ref: AC_HEADER_MAJOR200903
+Ref: AC_HEADER_STAT201687
+Ref: AC_HEADER_STDC203193
+Ref: AC_HEADER_TIME207932
+Node: Generic Headers209319
+Ref: AC_CHECK_HEADER209719
+Ref: AC_CHECK_HEADERS211592
+Node: Declarations214157
+Node: Particular Declarations214753
+Node: Generic Declarations214977
+Ref: AC_CHECK_DECLS216362
+Node: Structures218888
+Node: Particular Structures219503
+Ref: AC_STRUCT_ST_BLOCKS220572
+Ref: AC_STRUCT_TIMEZONE221268
+Node: Generic Structures221597
+Ref: AC_CHECK_MEMBERS222588
+Node: Types223421
+Node: Particular Types223941
+Ref: AC_TYPE_GETGROUPS224384
+Ref: AC_TYPE_MODE_T227420
+Ref: AC_TYPE_OFF_T227603
+Ref: AC_TYPE_PID_T227783
+Ref: AC_TYPE_SIZE_T227963
+Ref: AC_TYPE_UID_T228332
+Node: Generic Types229977
+Node: Compilers and Preprocessors232132
+Node: Specific Compiler Characteristics233406
+Node: Generic Compiler Characteristics234511
+Ref: AC_CHECK_SIZEOF234751
+Node: C Compiler239541
+Ref: AC_PROG_CC_C_O243992
+Ref: AC_C_BIGENDIAN247800
+Ref: AC_C_CONST249641
+Ref: AC_C_INLINE252959
+Ref: AC_C_CHAR_UNSIGNED253182
+Ref: AC_PROG_GCC_TRADITIONAL255804
+Node: C++ Compiler256216
+Node: Objective C Compiler258613
+Node: Objective C++ Compiler259987
+Node: Erlang Compiler and Interpreter261437
+Node: Fortran Compiler263482
+Node: Go Compiler288882
+Node: System Services289927
+Ref: AC_PATH_X290172
+Ref: AC_PATH_XTRA291165
+Ref: AC_SYS_INTERPRETER291742
+Ref: AC_SYS_LONG_FILE_NAMES293154
+Node: Posix Variants293531
+Ref: AC_USE_SYSTEM_EXTENSIONS293831
+Node: Erlang Libraries294907
+Node: Writing Tests299845
+Node: Language Choice301869
+Ref: AC_LANG302366
+Ref: AC_LANG_PUSH304165
+Ref: Language Choice-Footnote-1306038
+Node: Writing Test Programs306194
+Node: Guidelines306772
+Node: Test Functions309032
+Node: Generating Sources310430
+Node: Running the Preprocessor316514
+Ref: AC_PREPROC_IFELSE317246
+Ref: AC_EGREP_HEADER319176
+Ref: AC_EGREP_CPP319505
+Node: Running the Compiler319930
+Node: Running the Linker321685
+Ref: AC_LINK_IFELSE322825
+Node: Runtime323701
+Ref: AC_RUN_IFELSE324476
+Node: Systemology329326
+Node: Multiple Cases331675
+Node: Results333376
+Node: Defining Symbols334195
+Node: Setting Output Variables339086
+Node: Special Chars in Variables344977
+Node: Caching Results346237
+Node: Cache Variable Names349955
+Node: Cache Files351606
+Node: Cache Checkpointing353931
+Node: Printing Messages355305
+Ref: AC_MSG_RESULT356819
+Ref: AC_MSG_NOTICE357326
+Ref: AC_MSG_ERROR357690
+Ref: AC_MSG_WARN358523
+Node: Programming in M4358946
+Node: M4 Quotation359751
+Node: Active Characters360720
+Ref: Active Characters-Footnote-1362110
+Ref: Active Characters-Footnote-2362224
+Node: One Macro Call362246
+Node: Quoting and Parameters363802
+Node: Quotation and Nested Macros366138
+Node: Changequote is Evil369148
+Node: Quadrigraphs371678
+Node: Balancing Parentheses374360
+Node: Quotation Rule Of Thumb378454
+Node: Using autom4te381352
+Ref: Using autom4te-Footnote-1382003
+Node: autom4te Invocation382052
+Node: Customizing autom4te390554
+Node: Programming in M4sugar391835
+Node: Redefined M4 Macros393016
+Node: Diagnostic Macros401346
+Ref: m4_fatal402099
+Ref: m4_warn402338
+Node: Diversion support403106
+Node: Conditional constructs410892
+Node: Looping constructs417746
+Ref: m4_foreach_w421358
+Node: Evaluation Macros428710
+Node: Text processing Macros437399
+Node: Number processing Macros447109
+Ref: m4_version_compare449061
+Node: Set manipulation Macros451368
+Node: Forbidden Patterns460484
+Node: Debugging via autom4te461975
+Node: Programming in M4sh463794
+Node: Common Shell Constructs465167
+Node: Polymorphic Variables473140
+Node: Initialization Macros482729
+Node: File Descriptor Macros488318
+Ref: AS_MESSAGE_LOG_FD489470
+Node: Writing Autoconf Macros490972
+Node: Macro Definitions491777
+Node: Macro Names495456
+Node: Reporting Messages499217
+Node: Dependencies Between Macros501061
+Node: Prerequisite Macros501756
+Node: Suggested Ordering507831
+Node: One-Shot Macros509374
+Node: Obsoleting Macros510727
+Ref: AU_DEFUN511481
+Node: Coding Style512510
+Node: Portable Shell520317
+Node: Shellology524625
+Node: Invoking the Shell528796
+Node: Here-Documents529978
+Node: File Descriptors533598
+Node: Signal Handling540036
+Node: File System Conventions545244
+Node: Shell Pattern Matching551056
+Node: Shell Substitutions551620
+Node: Assignments569496
+Node: Parentheses571387
+Node: Slashes572344
+Node: Special Shell Variables573198
+Node: Shell Functions586530
+Node: Limitations of Builtins589937
+Ref: case593959
+Ref: echo599117
+Ref: export606091
+Ref: if609511
+Ref: set613322
+Ref: trap625044
+Ref: unset628855
+Node: Limitations of Usual Tools629950
+Ref: awk630249
+Ref: grep648353
+Ref: mkdir653985
+Ref: sed659805
+Ref: touch670936
+Node: Portable Make674211
+Node: $< in Ordinary Make Rules675873
+Node: Failure in Make Rules676339
+Node: Special Chars in Names677367
+Node: Backslash-Newline-Empty678339
+Node: Backslash-Newline Comments679371
+Node: Long Lines in Makefiles680260
+Node: Macros and Submakes680636
+Node: The Make Macro MAKEFLAGS683323
+Node: The Make Macro SHELL684208
+Node: Parallel Make686707
+Node: Comments in Make Rules690391
+Node: Newlines in Make Rules691561
+Node: Comments in Make Macros692606
+Node: Trailing whitespace in Make Macros693816
+Node: Command-line Macros and whitespace694567
+Node: obj/ and Make695237
+Node: make -k Status695888
+Node: VPATH and Make696510
+Node: Variables listed in VPATH697834
+Node: VPATH and Double-colon698373
+Node: $< in Explicit Rules698779
+Node: Automatic Rule Rewriting699246
+Node: Tru64 Directory Magic705928
+Node: Make Target Lookup706754
+Node: Single Suffix Rules711196
+Node: Timestamps and Make712542
+Node: Portable C and C++714227
+Node: Varieties of Unportability715868
+Node: Integer Overflow717965
+Node: Integer Overflow Basics718978
+Node: Signed Overflow Examples720726
+Node: Optimization and Wraparound724228
+Node: Signed Overflow Advice727190
+Node: Signed Integer Division729864
+Node: Preprocessor Arithmetic730475
+Node: Null Pointers731224
+Node: Buffer Overruns731858
+Node: Volatile Objects734647
+Node: Floating Point Portability740325
+Node: Exiting Portably740832
+Node: Manual Configuration742308
+Node: Specifying Target Triplets743141
+Ref: Specifying Names743314
+Node: Canonicalizing746189
+Node: Using System Type748452
+Node: Site Configuration751256
+Node: Help Formatting752228
+Node: External Software753172
+Ref: AC_ARG_WITH754718
+Node: Package Options759043
+Ref: AC_ARG_ENABLE760498
+Node: Pretty Help Strings761659
+Ref: AS_HELP_STRING762245
+Node: Option Checking764586
+Node: Site Details766314
+Node: Transforming Names767543
+Node: Transformation Options768625
+Node: Transformation Examples769102
+Node: Transformation Rules770823
+Node: Site Defaults772369
+Node: Running configure Scripts777710
+Node: Basic Installation778775
+Node: Compilers and Options782872
+Node: Multiple Architectures783526
+Node: Installation Names785106
+Node: Optional Features788001
+Node: Particular Systems789355
+Node: System Type790779
+Node: Sharing Defaults792107
+Node: Defining Variables792745
+Node: configure Invocation793643
+Node: config.status Invocation795349
+Ref: CONFIG_SHELL799096
+Node: Obsolete Constructs800262
+Node: Obsolete config.status Use801225
+Node: acconfig Header803003
+Node: autoupdate Invocation805025
+Node: Obsolete Macros806891
+Ref: AC_FUNC_SETVBUF_REVERSED814533
+Ref: AC_TYPE_SIGNAL831079
+Node: Autoconf 1834057
+Node: Changed File Names835123
+Node: Changed Makefiles835873
+Node: Changed Macros836961
+Node: Changed Results838215
+Node: Changed Macro Writing840339
+Node: Autoconf 2.13841619
+Node: Changed Quotation842827
+Node: New Macros844745
+Node: Hosts and Cross-Compilation846540
+Node: AC_LIBOBJ vs LIBOBJS850695
+Node: AC_ACT_IFELSE vs AC_TRY_ACT852310
+Ref: AC_FOO_IFELSE vs AC_TRY_FOO852499
+Node: Using Autotest854312
+Node: Using an Autotest Test Suite856716
+Node: testsuite Scripts857007
+Node: Autotest Logs861489
+Node: Writing Testsuites863830
+Node: testsuite Invocation880862
+Node: Making testsuite Scripts886209
+Node: FAQ891347
+Node: Distributing892207
+Node: Why GNU M4893256
+Node: Bootstrapping894125
+Node: Why Not Imake894735
+Node: Defining Directories899486
+Node: Autom4te Cache901644
+Node: Present But Cannot Be Compiled903482
+Node: Expanded Before Required907199
+Node: Debugging912097
+Node: History917120
+Node: Genesis917989
+Node: Exodus919167
+Node: Leviticus922212
+Node: Numbers923740
+Node: Deuteronomy925655
+Node: GNU Free Documentation License928326
+Node: Indices953491
+Node: Environment Variable Index954210
+Node: Output Variable Index965550
+Node: Preprocessor Symbol Index982430
+Node: Cache Variable Index1000699
+Node: Autoconf Macro Index1011387
+Node: M4 Macro Index1045716
+Node: Autotest Macro Index1066466
+Node: Program & Function Index1068869
+Node: Concept Index1089583
 
 End Tag Table

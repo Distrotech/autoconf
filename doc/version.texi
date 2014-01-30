@@ -1,4 +1,4 @@
-@set UPDATED 10 June 2013
-@set UPDATED-MONTH June 2013
-@set EDITION 2.69.2-2851b7-dirty
-@set VERSION 2.69.2-2851b7-dirty
+@set UPDATED 30 January 2014
+@set UPDATED-MONTH January 2014
+@set EDITION 2.69
+@set VERSION 2.69
