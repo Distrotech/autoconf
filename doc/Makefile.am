@@ -19,9 +19,8 @@ AM_MAKEINFOFLAGS = --no-split
 TEXI2HTML_FLAGS = -split_chapter
 TEXINFO_TEX = ../build-aux/texinfo.tex
 
-info_TEXINFOS = autoconf.texi standards.texi
+info_TEXINFOS = autoconf.texi
 autoconf_TEXINFOS = fdl.texi install.texi
-standards_TEXINFOS = fdl.texi gnu-oids.texi make-stds.texi
 
 EXTRA_DIST = gendocs_template
 
